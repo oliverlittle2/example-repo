@@ -39,8 +39,10 @@ class Position:
         self.num_cols = num_cols
     
     def is_in_bounds(self):
-        if ((self.row in range(self.num_rows)) 
-            and (self.col in range(self.num_cols))):
+        if (
+            (self.row in range(self.num_rows)) 
+            and (self.col in range(self.num_cols))
+        ):
             return True
         else:
             return False
